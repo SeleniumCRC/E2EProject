@@ -1,117 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="93544" started-at="2020-04-25T16:19:49 IST" finished-at="2020-04-25T16:21:23 IST">
+  <suite name="Default suite" duration-ms="26610" started-at="2020-04-25T21:33:48 IST" finished-at="2020-04-25T21:34:15 IST">
     <groups>
     </groups>
-    <test name="HomePageTest" duration-ms="67392" started-at="2020-04-25T16:19:49 IST" finished-at="2020-04-25T16:20:56 IST">
-      <class name="tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.HomePageTest@445b295b]" name="setUp" is-config="true" duration-ms="10803" started-at="2020-04-25T16:19:49 IST" finished-at="2020-04-25T16:20:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="currencyDropDownTC3()[pri:0, instance:tests.HomePageTest@445b295b]" name="currencyDropDownTC3" duration-ms="227" started-at="2020-04-25T16:20:00 IST" finished-at="2020-04-25T16:20:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- currencyDropDownTC3 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.HomePageTest@445b295b]" name="tearDown" is-config="true" duration-ms="114" started-at="2020-04-25T16:20:00 IST" finished-at="2020-04-25T16:20:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.HomePageTest@445b295b]" name="setUp" is-config="true" duration-ms="11456" started-at="2020-04-25T16:20:00 IST" finished-at="2020-04-25T16:20:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getPhoneNumberTC6()[pri:0, instance:tests.HomePageTest@445b295b]" name="getPhoneNumberTC6" duration-ms="80" started-at="2020-04-25T16:20:12 IST" finished-at="2020-04-25T16:20:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getPhoneNumberTC6 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.HomePageTest@445b295b]" name="tearDown" is-config="true" duration-ms="129" started-at="2020-04-25T16:20:12 IST" finished-at="2020-04-25T16:20:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.HomePageTest@445b295b]" name="setUp" is-config="true" duration-ms="9631" started-at="2020-04-25T16:20:12 IST" finished-at="2020-04-25T16:20:22 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logoValidateTC2()[pri:0, instance:tests.HomePageTest@445b295b]" name="logoValidateTC2" duration-ms="5" started-at="2020-04-25T16:20:22 IST" finished-at="2020-04-25T16:20:22 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoValidateTC2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.HomePageTest@445b295b]" name="tearDown" is-config="true" duration-ms="147" started-at="2020-04-25T16:20:22 IST" finished-at="2020-04-25T16:20:22 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.HomePageTest@445b295b]" name="setUp" is-config="true" duration-ms="9674" started-at="2020-04-25T16:20:22 IST" finished-at="2020-04-25T16:20:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigateToLoginPageTC5()[pri:0, instance:tests.HomePageTest@445b295b]" name="navigateToLoginPageTC5" duration-ms="1939" started-at="2020-04-25T16:20:31 IST" finished-at="2020-04-25T16:20:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToLoginPageTC5 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.HomePageTest@445b295b]" name="tearDown" is-config="true" duration-ms="158" started-at="2020-04-25T16:20:33 IST" finished-at="2020-04-25T16:20:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.HomePageTest@445b295b]" name="setUp" is-config="true" duration-ms="11781" started-at="2020-04-25T16:20:33 IST" finished-at="2020-04-25T16:20:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigateToRegisterPageTC4()[pri:0, instance:tests.HomePageTest@445b295b]" name="navigateToRegisterPageTC4" duration-ms="1828" started-at="2020-04-25T16:20:45 IST" finished-at="2020-04-25T16:20:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegisterPageTC4 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.HomePageTest@445b295b]" name="tearDown" is-config="true" duration-ms="104" started-at="2020-04-25T16:20:47 IST" finished-at="2020-04-25T16:20:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.HomePageTest@445b295b]" name="setUp" is-config="true" duration-ms="9080" started-at="2020-04-25T16:20:47 IST" finished-at="2020-04-25T16:20:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tittleValidateTC1()[pri:0, instance:tests.HomePageTest@445b295b]" name="tittleValidateTC1" duration-ms="24" started-at="2020-04-25T16:20:56 IST" finished-at="2020-04-25T16:20:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tittleValidateTC1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.HomePageTest@445b295b]" name="tearDown" is-config="true" duration-ms="77" started-at="2020-04-25T16:20:56 IST" finished-at="2020-04-25T16:20:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.HomePageTest -->
-    </test> <!-- HomePageTest -->
-    <test name="HomeHotel" duration-ms="11947" started-at="2020-04-25T16:20:56 IST" finished-at="2020-04-25T16:21:08 IST">
+    <test name="Default test" duration-ms="26610" started-at="2020-04-25T21:33:48 IST" finished-at="2020-04-25T21:34:15 IST">
       <class name="tests.HomeHotelsTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.HomeHotelsTest@68267da0]" name="setUp" is-config="true" duration-ms="9493" started-at="2020-04-25T16:20:56 IST" finished-at="2020-04-25T16:21:06 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.HomeHotelsTest@7494f96a]" name="setUp" is-config="true" duration-ms="11800" started-at="2020-04-25T21:33:48 IST" finished-at="2020-04-25T21:34:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigateHomeHotelUiTC1()[pri:0, instance:tests.HomeHotelsTest@68267da0]" name="navigateHomeHotelUiTC1" duration-ms="123" started-at="2020-04-25T16:21:06 IST" finished-at="2020-04-25T16:21:06 IST">
+        <test-method status="PASS" signature="fillDetailsTC2()[pri:0, instance:tests.HomeHotelsTest@7494f96a]" name="fillDetailsTC2" duration-ms="1167" started-at="2020-04-25T21:34:00 IST" finished-at="2020-04-25T21:34:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillDetailsTC2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.HomeHotelsTest@7494f96a]" name="tearDown" is-config="true" duration-ms="219" started-at="2020-04-25T21:34:01 IST" finished-at="2020-04-25T21:34:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.HomeHotelsTest@7494f96a]" name="setUp" is-config="true" duration-ms="13004" started-at="2020-04-25T21:34:01 IST" finished-at="2020-04-25T21:34:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="navigateHomeHotelUiTC1()[pri:0, instance:tests.HomeHotelsTest@7494f96a]" name="navigateHomeHotelUiTC1" duration-ms="217" started-at="2020-04-25T21:34:14 IST" finished-at="2020-04-25T21:34:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateHomeHotelUiTC1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.HomeHotelsTest@68267da0]" name="tearDown" is-config="true" duration-ms="2326" started-at="2020-04-25T16:21:06 IST" finished-at="2020-04-25T16:21:08 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.HomeHotelsTest@7494f96a]" name="tearDown" is-config="true" duration-ms="141" started-at="2020-04-25T21:34:15 IST" finished-at="2020-04-25T21:34:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.HomeHotelsTest -->
-    </test> <!-- HomeHotel -->
-    <test name="HomeFlights" duration-ms="14134" started-at="2020-04-25T16:21:08 IST" finished-at="2020-04-25T16:21:23 IST">
-      <class name="tests.HomePageFlightsTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.HomePageFlightsTest@3098cf3b]" name="setUp" is-config="true" duration-ms="11341" started-at="2020-04-25T16:21:08 IST" finished-at="2020-04-25T16:21:20 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigateHomeFlightUiTC1()[pri:0, instance:tests.HomePageFlightsTest@3098cf3b]" name="navigateHomeFlightUiTC1" duration-ms="617" started-at="2020-04-25T16:21:20 IST" finished-at="2020-04-25T16:21:20 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateHomeFlightUiTC1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.HomePageFlightsTest@3098cf3b]" name="tearDown" is-config="true" duration-ms="2162" started-at="2020-04-25T16:21:20 IST" finished-at="2020-04-25T16:21:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.HomePageFlightsTest -->
-    </test> <!-- HomeFlights -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
