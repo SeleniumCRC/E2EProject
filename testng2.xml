@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="base.listeners" />
+		<listener class-name="base.ExtentReporterNG"></listener>
+	</listeners>
+
+	<test name="HomeHotel">
+		<classes>
+			<class name="tests.HomeHotelsTest">
+				<methods>
+					<include name="navigateHomeHotelUiTC1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

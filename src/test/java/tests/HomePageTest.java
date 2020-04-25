@@ -16,6 +16,7 @@ public class HomePageTest extends TestBase{
 	
 	public static Logger log =LogManager.getLogger(HomePageTest.class.getName());
 	HomePage home;
+	//Register reg;
 	TestBase b = new TestBase();
 	public HomePageTest() {
 	super();	
@@ -53,7 +54,31 @@ public class HomePageTest extends TestBase{
 		String selectedCurrencyDropdown = home.getCurrencyDropdown().getText();
 		System.out.println("The text is selected for Dropdown"+selectedCurrencyDropdown);
 		
+	}
+	@Test
+	public void navigateToRegisterPageTC4()
+	{
+		home.getMyAccount().click();
+		home.getRegister().click();
 		
+		
+	}
+	@Test
+	public void navigateToLoginPageTC5()
+	{
+		home.getMyAccount().click();
+		home.getLogin().click();
+	}
+	@Test
+	public void getPhoneNumberTC6()
+	{
+		String expectedPhone ="phone Call Now : +1-234-56789";
+		String phoneno = home.getPhone().getText();
+		System.out.println(phoneno);
+		if(expectedPhone.equalsIgnoreCase(phoneno))
+		{
+			System.out.println("Passed TC6"+phoneno);
+		}
 	}
 	@AfterMethod
 	public void tearDown() {

@@ -10,24 +10,55 @@ import org.openqa.selenium.support.PageFactory;
 import base.TestBase;
 
 public class HomePage extends TestBase {
-	
 
-	@FindBy(xpath="//*[@class='mini-menu']//ul//li[1]")
+	@FindBy(xpath = "//*[@class='mini-menu']//ul//li[1]")
 	private WebElement currencyDropdown;
 
-	@FindBys(@FindBy(xpath="//*[@class='mini-menu']//ul//li"))
+	@FindBys(@FindBy(xpath = "//*[@class='mini-menu']//ul//li"))
 	private List<WebElement> headerElements;
+
+	@FindBy(xpath = "//*[@class='mini-menu']//ul//li[3]")
+	private WebElement myAccount;
+
+	@FindBy(xpath = "//*[@class='mini-menu']//ul//li[3]//a[@class='dropdown-item active tr']")
+	private WebElement login;
+
 	
-	 public HomePage() {
-		
+	@FindBy(xpath = "//*[@class='mini-menu']//ul//li[3]//a[@class='dropdown-item tr']")
+	private WebElement register;
+
+	
+	@FindBy(xpath = "//*[@class='navbar-phone d-none d-lg-block o1']")
+	private WebElement phone;
+	
+	public HomePage() {
+
 		PageFactory.initElements(driver, this);
 	}
 
 	public WebElement getCurrencyDropdown() {
 		return currencyDropdown;
-		
+
+	}
+	
+	public WebElement getRegister() {
+		return register;
+	}
+
+	public WebElement getLogin() {
+		return login;
+	}
+	public List<WebElement> getHeaderElements() {
+		return headerElements;
+	}
+
+	public WebElement getMyAccount() {
+		return myAccount;
+	}
+
+	public WebElement getPhone() {
+		return phone;
 	}
 
 	
-
 }
