@@ -1,0 +1,7 @@
+23:57:17.969 [main] DEBUG base.TestBase -  Cofiguration file loaded
+23:57:18.038 [main] DEBUG base.TestBase - Property value got successfully Namw : broswer 
+23:57:33.676 [main] DEBUG base.TestBase -  Cofiguration file loaded
+23:57:33.679 [main] DEBUG base.TestBase - Property value got successfully Namw : broswer 
+23:58:30.652 [main] DEBUG base.TestBase -  Cofiguration file loaded
+23:58:30.656 [main] DEBUG base.TestBase - Property value got successfully Namw : broswer 
+23:58:44.446 [main] INFO  base.TestBase - Chrome lauched suceessfully
