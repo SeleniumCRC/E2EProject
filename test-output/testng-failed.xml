@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="base.listeners"/>
-    <listener class-name="base.ExtentReporterNG"/>
-  </listeners>
-  <test name="HomeHotel(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="tests.HomeHotelsTest">
+      <class name="tests.RegisterPageTest">
         <methods>
-          <include name="fillDetailsTC2"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="registerCustomer"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.HomeHotelsTest -->
+      </class> <!-- tests.RegisterPageTest -->
     </classes>
-  </test> <!-- HomeHotel(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

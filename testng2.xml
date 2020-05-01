@@ -8,9 +8,9 @@
 
 	<test name="HomeHotel">
 		<classes>
-			<class name="tests.HomeHotelsTest">
+			<class name="tests.RegisterPageTest">
 				<methods>
-					<include name="fillDetailsTC2"></include>
+					<include name="registerCustomer"></include>
 				</methods>
 			</class>
 		</classes>

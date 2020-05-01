@@ -15,9 +15,10 @@ import pages.HomePage;
 public class HomePageTest extends TestBase{
 	
 	public static Logger log =LogManager.getLogger(HomePageTest.class.getName());
-	HomePage home;
+	HomePage home = new HomePage();
 	//Register reg;
-	TestBase b = new TestBase();
+	TestBase b = new TestBase();	
+	
 	public HomePageTest() {
 	super();	
 	}
@@ -25,7 +26,7 @@ public class HomePageTest extends TestBase{
 	public void setUp() throws IOException {
 		
 		initialiseDriver();
-		home = new HomePage();
+		 home = new HomePage();
 		log.info("Initialization of driver done");
 		
 	}
@@ -57,7 +58,7 @@ public class HomePageTest extends TestBase{
 	}
 	@Test
 	public void navigateToRegisterPageTC4()
-	{
+	{ 
 		home.getMyAccount().click();
 		home.getRegister().click();
 		
