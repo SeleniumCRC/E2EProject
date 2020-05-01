@@ -1,7 +1,11 @@
 package pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 import base.TestBase;
@@ -20,6 +24,12 @@ public class HomeHotelsPage extends TestBase{
 	
 	@FindBy(xpath = "//*[@id='airDatepickerRange-hotel']//*[@id='checkout']")
 	private WebElement hotelsCheckOut;
+	
+	@FindBys(@FindBy(xpath="//*[@class='select2-result-sub']//li"))
+	private List<WebElement> dropElements; 
+	
+	
+	//driver.findElements(By.xpath("//*[@class='select2-result-sub']//li"));
 	
 	public HomeHotelsPage() {
 
@@ -40,6 +50,10 @@ public class HomeHotelsPage extends TestBase{
 
 	public WebElement getHotelsCheckOut() {
 		return hotelsCheckOut;
+	}
+
+	public List<WebElement> getDropElements() {
+		return dropElements;
 	}
 	
 

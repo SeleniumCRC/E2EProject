@@ -1,2 +1,6 @@
+/META-INF/
 /pages/
-/snippet/
+/base/
+/chromedriver.exe
+/IEDriverServer.exe
+/geckodriver.exe
