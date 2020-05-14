@@ -98,9 +98,9 @@ public class RegisterPage extends TestBase{
 		
 		//WebDriverWait wait = new WebDriverWait(driver, 30);
 		//wait.until(ExpectedConditions.invisibilityOfElementLocated(signUpButton));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
+		//JavascriptExecutor js = (JavascriptExecutor)driver;
 		//js.executeScript("arguments[0].click();", signUpButton);
-		js.executeScript("window.scrollTo(" + signUpButton.getLocation().x + "," +signUpButton.getLocation().y + ");");
+		//js.executeScript("window.scrollTo(" + signUpButton.getLocation().x + "," +signUpButton.getLocation().y + ");");
 		//((JavascriptExecutor)driver).executeScript("window.scrollTo(0,"+signUpButton.getLocation().y+")");
 		//Actions action = new Actions(driver);
 		//action.moveToElement(signUpButton).click().build().perform();
@@ -110,7 +110,7 @@ public class RegisterPage extends TestBase{
 		//{
 			//signUpButton.click();	
 		//}
-		//signUpButton.click();
+		signUpButton.click();
 		//Thread.sleep(5000);
 		
 	}

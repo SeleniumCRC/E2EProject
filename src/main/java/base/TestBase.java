@@ -3,6 +3,8 @@ package base;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -11,8 +13,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 
 import com.google.common.io.Files;
@@ -29,6 +33,8 @@ public class TestBase {
 		Properties prop =new Properties();
 		prop.load(ip);
 		log.debug(" Cofiguration file loaded");
+		
+
 		
 		System.out.println(userDir);
 		//String browserName =System.getProperty("browser");
@@ -59,7 +65,7 @@ public class TestBase {
 		
 		log.debug(" Implicit wait applied suceessfully");
 		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		driver.manage().window().fullscreen();
 		
 		String url= prop.getProperty("url");
 		log.debug("Property value got successfully Name : url");

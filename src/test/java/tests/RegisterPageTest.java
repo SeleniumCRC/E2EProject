@@ -40,9 +40,9 @@ public class RegisterPageTest extends TestBase {
 	{
 		
 		homeTest.navigateToRegisterPageTC4();
-		reg.registerCustomer("Ch", "chend", "1201201202", "c@gmail.com", "abc12345", "abc12345");	
+		reg.registerCustomer("Ch", "chend", "1201201202", "b@gmail.com", "abc12345", "abc12345");	
 		System.out.println("Done with reg");
-		
+		Thread.sleep(5000);
 		String url =driver.getCurrentUrl();
 		String tittle =driver.getTitle();
 		System.out.println(url+"     "+tittle);
