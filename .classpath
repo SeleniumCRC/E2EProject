@@ -25,5 +25,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/Selenium Material/ExcelUtil-jar-with-dependencies.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,0 +1,7 @@
+14:55:10.607 [main] DEBUG base.TestBase - Property value got successfully Name : url
+14:55:17.803 [main] INFO  base.TestBase -  Url lauched suceessfully
+14:55:17.862 [main] INFO  tests.HomePageTest - Initialization of driver done
+14:55:21.813 [main] INFO  tests.HomePageTest - Broswer window is clode. Driver closed
+14:56:59.320 [main] DEBUG base.TestBase -  Cofiguration file loaded
+14:56:59.326 [main] DEBUG base.TestBase - Property value got successfully Namw : broswer 
+14:57:02.356 [main] INFO  base.TestBase - Chrome lauched suceessfully

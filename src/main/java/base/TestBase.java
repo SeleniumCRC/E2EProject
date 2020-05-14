@@ -60,6 +60,7 @@ public class TestBase {
 		log.debug(" Implicit wait applied suceessfully");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		
 		String url= prop.getProperty("url");
 		log.debug("Property value got successfully Name : url");
 		driver.get(url);

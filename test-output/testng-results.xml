@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16514" started-at="2020-05-01T11:01:59Z" finished-at="2020-05-01T11:02:16Z">
+  <suite name="Default suite" duration-ms="22633" started-at="2020-05-13T16:52:12Z" finished-at="2020-05-13T16:52:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16514" started-at="2020-05-01T11:01:59Z" finished-at="2020-05-01T11:02:16Z">
+    <test name="Default test" duration-ms="22633" started-at="2020-05-13T16:52:12Z" finished-at="2020-05-13T16:52:35Z">
       <class name="tests.RegisterPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.RegisterPageTest@7e6f74c]" name="setUp" is-config="true" duration-ms="12133" started-at="2020-05-01T16:31:59Z" finished-at="2020-05-01T16:32:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.RegisterPageTest@662ac478]" name="setUp" is-config="true" duration-ms="14533" started-at="2020-05-13T22:22:13Z" finished-at="2020-05-13T22:22:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registerCustomer()[pri:0, instance:tests.RegisterPageTest@7e6f74c]" name="registerCustomer" duration-ms="2030" started-at="2020-05-01T16:32:11Z" finished-at="2020-05-01T16:32:13Z">
+        <test-method status="PASS" signature="registerCustomer()[pri:0, instance:tests.RegisterPageTest@662ac478]" name="registerCustomer" duration-ms="5307" started-at="2020-05-13T22:22:27Z" finished-at="2020-05-13T22:22:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerCustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.RegisterPageTest@7e6f74c]" name="tearDown" is-config="true" duration-ms="2326" started-at="2020-05-01T16:32:13Z" finished-at="2020-05-01T16:32:16Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.RegisterPageTest@662ac478]" name="tearDown" is-config="true" duration-ms="2741" started-at="2020-05-13T22:22:32Z" finished-at="2020-05-13T22:22:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

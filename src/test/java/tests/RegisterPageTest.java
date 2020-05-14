@@ -36,14 +36,16 @@ public class RegisterPageTest extends TestBase {
 
 	}
 	@Test
-	public void registerCustomer()
+	public void registerCustomer() throws InterruptedException
 	{
 		
 		homeTest.navigateToRegisterPageTC4();
-		//reg.getFirstName().click();
-		reg.getFirstName().clear();
-		reg.getFirstName().sendKeys("abc");
+		reg.registerCustomer("Ch", "chend", "1201201202", "c@gmail.com", "abc12345", "abc12345");	
+		System.out.println("Done with reg");
 		
+		String url =driver.getCurrentUrl();
+		String tittle =driver.getTitle();
+		System.out.println(url+"     "+tittle);
 	}
 
 	@AfterMethod
