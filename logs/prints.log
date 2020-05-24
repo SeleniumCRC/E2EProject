@@ -1,2 +1,3 @@
-01:57:23.783 [main] INFO  tests.HomePageTest - Initialization of driver done
-01:57:32.893 [main] INFO  tests.HomePageTest - Broswer window is clode. Driver closed
+23:34:28.812 [main] INFO  base.TestBase -  Url lauched suceessfully
+23:34:29.319 [main] INFO  tests.HomePageTest - Initialization of driver done
+23:34:43.660 [main] INFO  tests.HomePageTest - Broswer window is clode. Driver closed

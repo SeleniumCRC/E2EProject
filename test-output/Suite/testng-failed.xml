@@ -7,12 +7,12 @@
   </listeners>
   <test name="HomeHotel(failed)">
     <classes>
-      <class name="tests.RegisterPageTest">
+      <class name="tests.HomeHotelsTest">
         <methods>
+          <include name="fillDetailsTC2"/>
           <include name="setUp"/>
-          <include name="registerCustomer"/>
         </methods>
-      </class> <!-- tests.RegisterPageTest -->
+      </class> <!-- tests.HomeHotelsTest -->
     </classes>
   </test> <!-- HomeHotel(failed) -->
 </suite> <!-- Failed suite [Suite] -->

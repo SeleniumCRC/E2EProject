@@ -1,0 +1,2 @@
+[0524/233417.650:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Users\CRC\AppData\Local\Temp\scoped_dir9260_281814498\Crashpad: The file or directory is corrupted and unreadable. (0x570)
+[0524/233417.665:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)

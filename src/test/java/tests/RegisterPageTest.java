@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -11,6 +12,7 @@ import org.testng.annotations.Test;
 import base.TestBase;
 import pages.HomePage;
 import pages.RegisterPage;
+import utils.UtilMethods;
 
 public class RegisterPageTest extends TestBase {
 
@@ -18,10 +20,11 @@ public class RegisterPageTest extends TestBase {
 	HomePage home;
 	HomePageTest homeTest;
 	RegisterPage reg;
+	UtilMethods util;
 	TestBase b = new TestBase();
 
 	public RegisterPageTest() {
-	super();	
+		super();
 	}
 
 	@BeforeMethod
@@ -32,20 +35,21 @@ public class RegisterPageTest extends TestBase {
 		home = new HomePage();
 		homeTest = new HomePageTest();
 		log.info("Initialization of driver done");
-		
 
 	}
+
 	@Test
-	public void registerCustomer() throws InterruptedException
-	{
-		
+	public void registerCustomer() throws InterruptedException {
+
 		homeTest.navigateToRegisterPageTC4();
-		reg.registerCustomer("Ch", "chend", "1201201202", "b@gmail.com", "abc12345", "abc12345");	
+		reg.registerCustomer("Ch", "chend", "1201201202", "b@gmail.com", "abc12345", "abc12345");
 		System.out.println("Done with reg");
 		Thread.sleep(5000);
-		String url =driver.getCurrentUrl();
-		String tittle =driver.getTitle();
-		System.out.println(url+"     "+tittle);
+		// util.getExplicitelyWait().until(ExpectedConditions.titleIs("My
+		// Account"));
+		String url = driver.getCurrentUrl();
+		String tittle = driver.getTitle();
+		System.out.println(url + "     " + tittle);
 	}
 
 	@AfterMethod

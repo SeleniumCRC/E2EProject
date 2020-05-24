@@ -1,0 +1,7 @@
+09:53:01.970 [main] DEBUG base.TestBase -  Cofiguration file loaded
+09:53:01.970 [main] DEBUG base.TestBase - Property value got successfully Namw : broswer 
+09:53:04.197 [main] INFO  base.TestBase - Chrome lauched suceessfully
+09:53:04.212 [main] DEBUG base.TestBase -  Implicit wait applied suceessfully
+09:53:05.400 [main] DEBUG base.TestBase - Property value got successfully Name : url
+09:53:17.019 [main] INFO  base.TestBase -  Url lauched suceessfully
+09:53:17.020 [main] INFO  tests.HomePageTest - Initialization of driver done

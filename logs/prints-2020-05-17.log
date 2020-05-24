@@ -1,0 +1,7 @@
+23:17:34.204 [main] INFO  tests.HomePageTest - Initialization of driver done
+23:17:36.539 [main] INFO  tests.HomePageTest - Broswer window is clode. Driver closed
+23:20:01.313 [main] DEBUG base.TestBase -  Cofiguration file loaded
+23:20:01.317 [main] DEBUG base.TestBase - Property value got successfully Namw : broswer 
+23:20:04.325 [main] INFO  base.TestBase - Chrome lauched suceessfully
+23:20:04.332 [main] DEBUG base.TestBase -  Implicit wait applied suceessfully
+23:20:05.756 [main] DEBUG base.TestBase - Property value got successfully Name : url

@@ -13,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -45,6 +46,7 @@ public class TestBase {
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", userDir+"\\src\\main\\resources\\chromedriver.exe");
+			System.getProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
 			driver = new ChromeDriver();	
 			log.info("Chrome lauched suceessfully");
 			
@@ -64,7 +66,7 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		
 		log.debug(" Implicit wait applied suceessfully");
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().window().fullscreen();
 		
 		String url= prop.getProperty("url");
