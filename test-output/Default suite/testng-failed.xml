@@ -5,7 +5,7 @@
     <classes>
       <class name="tests.HomeHotelsTest">
         <methods>
-          <include name="navigateHomeHotelUiTC1"/>
+          <include name="fillDetailsTC2"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

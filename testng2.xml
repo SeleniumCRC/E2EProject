@@ -9,7 +9,7 @@
 		<classes>
 			<class name="tests.HomeHotelsTest">
 				<methods>
-					<include name="fillDetailsTC2"></include>
+					<include name="navigateHomeHotelUiTC1"></include>
 				</methods>
 			</class>
 		</classes>

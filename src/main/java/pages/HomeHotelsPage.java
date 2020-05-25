@@ -25,6 +25,19 @@ public class HomeHotelsPage extends TestBase{
 	@FindBy(xpath = "//*[@id='airDatepickerRange-hotel']//*[@id='checkout']")
 	private WebElement hotelsCheckOut;
 	
+	@FindBy(xpath = "//*[@id='datepickers-container']//div[1]//nav//div[2]")
+	private WebElement middle;
+	
+
+	@FindBy(xpath = "//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='next']")
+	private WebElement next;
+	
+
+	@FindBy(xpath = "//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='prev']")
+	private WebElement prev;
+	
+	
+	
 	@FindBys(@FindBy(xpath="//*[@class='select2-result-sub']//li"))
 	private List<WebElement> dropElements; 
 	
@@ -54,6 +67,18 @@ public class HomeHotelsPage extends TestBase{
 
 	public List<WebElement> getDropElements() {
 		return dropElements;
+	}
+
+	public WebElement getMiddle() {
+		return middle;
+	}
+
+	public WebElement getNext() {
+		return next;
+	}
+
+	public WebElement getPrev() {
+		return prev;
 	}
 	
 

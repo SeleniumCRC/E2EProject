@@ -18,12 +18,14 @@ import org.testng.annotations.Test;
 
 import base.TestBase;
 import pages.HomeHotelsPage;
+import utils.UtilMethods;
 
 public class HomeHotelsTest extends TestBase {
 
 	public static Logger log = LogManager.getLogger(HomePageTest.class.getName());
 
 	HomeHotelsPage homeHotel;
+	UtilMethods util;
 	TestBase b = new TestBase();
 
 	public HomeHotelsTest() {
@@ -35,6 +37,7 @@ public class HomeHotelsTest extends TestBase {
 
 		initialiseDriver();
 		homeHotel = new HomeHotelsPage();
+		util =new UtilMethods();
 		log.info("Initialization of driver done");
 
 	}
@@ -43,6 +46,7 @@ public class HomeHotelsTest extends TestBase {
 	public void navigateHomeHotelUiTC1() {
 		homeHotel.getHotelsHeaderButton().click();
 		System.out.println("On Home hotels page ");
+		util.printSample();
 	}
 
 	@Test
@@ -51,40 +55,33 @@ public class HomeHotelsTest extends TestBase {
 		homeHotel.getHotelsDestination().sendKeys("ind");
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.visibilityOfAllElements(homeHotel.getDropElements()));
-
 		homeHotel.getHotelsDestination().sendKeys(Keys.DOWN);
 		// homeHotel.getHotelsDestination().sendKeys(Keys.DOWN);
 		homeHotel.getHotelsDestination().sendKeys(Keys.ENTER);
-
-		System.out.println("destination");
 		// Select check in date
-
-		String dateTime = "05/12/2021";
+		
+		/*String date = "05/12/2021";
 		// month[CLicking in center]
 		WebElement center = driver.findElement(By.xpath("//*[@id='datepickers-container']//div[1]//nav//div[2]"));
 		System.out.println(center.getText());
-
 		String date_dd_MM_yyyy[] = dateTime.split("/");
 		System.out.println(date_dd_MM_yyyy.length);
 		int yearDiff = Integer.parseInt(date_dd_MM_yyyy[2]) - Calendar.getInstance().get(Calendar.YEAR);
-		System.out.println(yearDiff);
-		// forward button
-		// Previous button
-		WebElement prev = driver.findElement(
-				By.xpath("//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='prev']"));
+		System.out.println(yearDiff);*/
+		WebElement prev = driver.findElement(By.xpath("//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='prev']"));
+		String date = "05/12/2021";
 		Thread.sleep(5000);
 		homeHotel.getHotelsCheckIn().click();
-
-		center.click();
-		WebElement next = driver.findElement(
-				By.xpath("//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='next']"));
-
+		WebElement next = driver.findElement(By.xpath("//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='next']"));
+		WebElement middle = homeHotel.getMiddle();
+		util.getDate(date, middle, next, prev);
+		/*center.click();
+		WebElement next = driver.findElement(By.xpath("//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='next']"));
 		if (yearDiff != 0) {
 			// if you have to move next year
 			if (yearDiff > 0) {
 				for (int i = 0; i < yearDiff; i++) {
 					System.out.println("Year Diff->" + i);
-
 					next.click();
 				}
 			}
@@ -96,14 +93,12 @@ public class HomeHotelsTest extends TestBase {
 				}
 			}
 		}
-
 		// Get all months from calendar to select correct one
 		List<WebElement> list_AllMonthToBook = driver
 				.findElements(By.xpath("//*[starts-with(@class, 'datepicker--cell datepicker--cell-month')]"));
 		System.out.println(list_AllMonthToBook.size());
 
 		list_AllMonthToBook.get(Integer.parseInt(date_dd_MM_yyyy[1]) - 1).click();
-
 		// List<WebElement> list_AllDateToBook =
 		// driver.findElements(By.xpath("//*[starts-with(@class,
 		// 'datepicker--cell datepicker--cell-day')]"));
@@ -117,19 +112,14 @@ public class HomeHotelsTest extends TestBase {
 		for (WebElement s : list_AllDateToBook) {
 			System.out.println(s.getText());
 		}
-
 		list_AllDateToBook.get(Integer.parseInt(date_dd_MM_yyyy[0]) - 1).click();
-
-		Thread.sleep(5000);
-		homeHotel.getHotelsCheckOut().click();
-		
-		
+*/		Thread.sleep(5000);
+		//homeHotel.getHotelsCheckOut().click();		
 	}
 
 	@AfterMethod
 	public void tearDown() {
 		driver.close();
-
 		log.info("Broswer window is clode. Driver closed");
 	}
 
