@@ -84,4 +84,27 @@ public class UtilMethods extends TestBase {
 		}
 		return result;
 	}
+
+	public void selectGenderCount(WebElement PaxSelection, int count) {
+		
+		String alreadyPresent = PaxSelection.findElement(By.xpath("//*[@class='form-control touch-spin-03 form-readonly-control']")).getText();
+		int alreadyPresentCount = Integer.parseInt(alreadyPresent);
+		System.out.println(alreadyPresentCount);
+		int diff = alreadyPresentCount - count;
+		
+		if(alreadyPresentCount > count)
+		{
+			for(int i =0;i<diff;i++)
+			{
+				PaxSelection.findElement(By.xpath("//*[@class='btn btn-white bootstrap-touchspin-down ']")).click();
+			}
+		} else if(alreadyPresentCount < count)
+		{
+			for(int i =0;i<diff;i++)
+			{
+				PaxSelection.findElement(By.xpath("//*[@class='btn btn-white bootstrap-touchspin-up ']")).click();
+			}
+		}
+			
+	}
 }

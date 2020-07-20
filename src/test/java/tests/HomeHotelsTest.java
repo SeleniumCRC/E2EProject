@@ -50,7 +50,7 @@ public class HomeHotelsTest extends TestBase {
 	}
 
 	@Test
-	public void fillDetailsTC2() throws InterruptedException {
+	public void HotelSearch() throws InterruptedException {
 		homeHotel.getHotelsDestination().click();
 		homeHotel.getHotelsDestination().sendKeys("ind");
 		WebDriverWait wait = new WebDriverWait(driver, 15);
@@ -72,9 +72,10 @@ public class HomeHotelsTest extends TestBase {
 		String date = "05/12/2021";
 		Thread.sleep(5000);
 		homeHotel.getHotelsCheckIn().click();
-		WebElement next = driver.findElement(By.xpath("//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='next']"));
-		WebElement middle = homeHotel.getMiddle();
-		util.getDate(date, middle, next, prev);
+		//WebElement next = driver.findElement(By.xpath("//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='next']"));
+		
+		//WebElement middle = homeHotel.getMiddle();
+		util.getDate(date, homeHotel.getMiddle(), homeHotel.getNext(), homeHotel.getPrev());
 		/*center.click();
 		WebElement next = driver.findElement(By.xpath("//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='next']"));
 		if (yearDiff != 0) {
@@ -113,8 +114,13 @@ public class HomeHotelsTest extends TestBase {
 			System.out.println(s.getText());
 		}
 		list_AllDateToBook.get(Integer.parseInt(date_dd_MM_yyyy[0]) - 1).click();
-*/		Thread.sleep(5000);
-		//homeHotel.getHotelsCheckOut().click();		
+*/		
+		String checkOutdate = "08/12/2021";
+		Thread.sleep(5000);
+		homeHotel.getHotelsCheckOut().click();
+		util.getDate(checkOutdate, homeHotel.getCheckoutMiddle(), homeHotel.getCheckoutNext(), homeHotel.getCheckoutPrev());
+		
+		util.selectGenderCount(homeHotel.getAdultsSelection(), 2);
 	}
 
 	@AfterMethod

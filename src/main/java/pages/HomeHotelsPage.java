@@ -25,22 +25,29 @@ public class HomeHotelsPage extends TestBase{
 	@FindBy(xpath = "//*[@id='airDatepickerRange-hotel']//*[@id='checkout']")
 	private WebElement hotelsCheckOut;
 	
-	@FindBy(xpath = "//*[@id='datepickers-container']//div[1]//nav//div[2]")
-	private WebElement middle;
-	
-
-	@FindBy(xpath = "//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='next']")
-	private WebElement next;
-	
-
-	@FindBy(xpath = "//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='prev']")
-	private WebElement prev;
-	
-	
-	
 	@FindBys(@FindBy(xpath="//*[@class='select2-result-sub']//li"))
 	private List<WebElement> dropElements; 
 	
+	@FindBy(xpath = "//*[@id='datepickers-container']//div[1]//nav//div[2]")
+	private WebElement middle;
+	
+	@FindBy(xpath = "//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='next']")
+	private WebElement next;
+	
+	@FindBy(xpath = "//*[@id='datepickers-container']/child::div[1]/nav/child::div[@data-action='prev']")
+	private WebElement prev;
+	
+	@FindBy(xpath = "//*[@id='datepickers-container']/child::div[2]/nav/child::div[2]")
+	private WebElement checkoutMiddle;
+	
+	@FindBy(xpath = "//*[@id='datepickers-container']/child::div[2]/nav/child::div[@data-action='prev']")
+	private WebElement checkoutPrev;
+	
+	@FindBy(xpath = "//*[@id='datepickers-container']/child::div[2]/nav/child::div[@data-action='next']")
+	private WebElement checkoutNext;
+	
+	@FindBy(xpath ="//div[contains(@class,'col o2')]//div[contains(@class,'bootstrap-touchspin bootstrap-touchspin-injected')]")
+	private WebElement adultsSelection;
 	
 	//driver.findElements(By.xpath("//*[@class='select2-result-sub']//li"));
 	
@@ -80,7 +87,21 @@ public class HomeHotelsPage extends TestBase{
 	public WebElement getPrev() {
 		return prev;
 	}
-	
 
+	public WebElement getCheckoutMiddle() {
+		return checkoutMiddle;
+	}
+
+	public WebElement getCheckoutPrev() {
+		return checkoutPrev;
+	}
+
+	public WebElement getCheckoutNext() {
+		return checkoutNext;
+	}
+	
+	public WebElement getAdultsSelection() {
+		return adultsSelection;
+	}
 }
 	
