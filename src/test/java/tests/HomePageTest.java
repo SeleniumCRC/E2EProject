@@ -4,6 +4,7 @@ package tests;
 import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -13,10 +14,9 @@ import base.TestBase;
 import pages.HomePage;
 
 public class HomePageTest extends TestBase{
-	
+	public WebDriver driver;
 	public static Logger log =LogManager.getLogger(HomePageTest.class.getName());
-	HomePage home = new HomePage();
-	//Register reg;
+	HomePage home;
 	TestBase b = new TestBase();	
 	
 	public HomePageTest() {
@@ -25,8 +25,8 @@ public class HomePageTest extends TestBase{
 	@BeforeMethod
 	public void setUp() throws IOException {
 		
-		initialiseDriver();
-		 home = new HomePage();
+		driver = initialiseDriver();
+		 home = new HomePage(driver);
 		log.info("Initialization of driver done");
 		
 	}
@@ -35,7 +35,7 @@ public class HomePageTest extends TestBase{
 	public void tittleValidateTC1()
 	{
 		String expectedTittle =driver.getTitle();
-		String actulTittle = "PHPTRAVELS | Travel Technology Partner";
+		String actulTittle = "PHPTRAVELS | Travel Technology Partner f";
 		Assert.assertEquals(actulTittle, expectedTittle);
 		System.out.println("TC 1 Passed");
 		log.info("TC-1 is Passed");

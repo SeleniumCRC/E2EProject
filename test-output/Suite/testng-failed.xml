@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
   <listeners>
     <listener class-name="base.listeners"/>
-    <listener class-name="base.ExtentReporterNG"/>
   </listeners>
-  <test name="HomeHotel(failed)">
+  <test name="HomePageTest(failed)" parallel="methods">
     <classes>
-      <class name="tests.HomeHotelsTest">
+      <class name="tests.HomePageTest">
         <methods>
+          <include name="navigateToRegisterPageTC4"/>
+          <include name="tittleValidateTC1"/>
+          <include name="currencyDropDownTC3"/>
           <include name="tearDown"/>
-          <include name="HotelSearch"/>
+          <include name="logoValidateTC2"/>
+          <include name="navigateToLoginPageTC5"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- tests.HomeHotelsTest -->
+      </class> <!-- tests.HomePageTest -->
     </classes>
-  </test> <!-- HomeHotel(failed) -->
+  </test> <!-- HomePageTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

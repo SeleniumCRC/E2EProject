@@ -30,9 +30,9 @@ public class RegisterPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp() throws IOException {
 
-		initialiseDriver();
-		reg = new RegisterPage();
-		home = new HomePage();
+		driver =initialiseDriver();
+		reg = new RegisterPage(driver);
+		home = new HomePage(driver);
 		homeTest = new HomePageTest();
 		log.info("Initialization of driver done");
 

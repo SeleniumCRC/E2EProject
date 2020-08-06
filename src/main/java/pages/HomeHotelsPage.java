@@ -2,7 +2,7 @@ package pages;
 
 import java.util.List;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -11,11 +11,10 @@ import org.openqa.selenium.support.PageFactory;
 import base.TestBase;
 
 public class HomeHotelsPage extends TestBase{
-
+	public WebDriver driver;
 	@FindBy(xpath = "//*[@class='menu-horizontal-wrapper-02']//li[1]/a")
 	private WebElement hotelsHeaderButton;
 	
-		//*[@id="s2id_autogen1"]//a
 	@FindBy(xpath = "//*[@id='s2id_autogen1']//a")
 	private WebElement hotelsDestination;
 
@@ -51,8 +50,8 @@ public class HomeHotelsPage extends TestBase{
 	
 	//driver.findElements(By.xpath("//*[@class='select2-result-sub']//li"));
 	
-	public HomeHotelsPage() {
-
+	public HomeHotelsPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 

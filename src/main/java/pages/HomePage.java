@@ -2,6 +2,7 @@ package pages;
 
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -11,6 +12,7 @@ import base.TestBase;
 
 public class HomePage extends TestBase {
 
+	public WebDriver driver;
 	@FindBy(xpath = "//*[@class='mini-menu']//ul//li[1]")
 	private WebElement currencyDropdown;
 
@@ -31,8 +33,9 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//*[@class='navbar-phone d-none d-lg-block o1']")
 	private WebElement phone;
 	
-	public HomePage() {
+	public HomePage(WebDriver driver) {
 
+		this.driver =driver;
 		PageFactory.initElements(driver, this);
 	}
 

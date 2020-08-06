@@ -2,17 +2,24 @@ package base;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class listeners implements ITestListener {
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
+public class listeners extends TestBase implements ITestListener {
 	
 	TestBase ss = new TestBase();
-	
+	ExtentReports extent = ExtentReporterNG.getReportObject();
+	ExtentTest test;
+	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 	public void onFinish(ITestContext arg0) {					
         // TODO Auto-generated method stub				
-        		
+        		extent.flush();
     }		
 
     public void onStart(ITestContext arg0) {					
@@ -27,8 +34,18 @@ public class listeners implements ITestListener {
 
     public void onTestFailure(ITestResult result) {					
         // TODO Auto-generated method stub				
-        		try {
-					ss.takeScreenshot(result);
+    	extentTest.get().fail(result.getThrowable());
+    	WebDriver driver =null;
+    	String testMethodName = result.getMethod().getMethodName();		
+    	try {
+			driver =(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+        try {
+        	extentTest.get().addScreenCaptureFromPath(ss.takeScreenshot(testMethodName, driver), testMethodName);
+					
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -40,14 +57,15 @@ public class listeners implements ITestListener {
         		
     }		
 
-    public void onTestStart(ITestResult arg0) {					
+    public void onTestStart(ITestResult result) {					
         // TODO Auto-generated method stub				
-        		
+    	test = extent.createTest(result.getMethod().getMethodName());
+    	extentTest.set(test);
     }		
 
     public void onTestSuccess(ITestResult arg0) {					
         // TODO Auto-generated method stub				
-        		
+    	extentTest.get().log(Status.PASS, "Test Passed");	
     }		
 
 }

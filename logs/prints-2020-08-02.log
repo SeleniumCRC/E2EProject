@@ -1,0 +1,7 @@
+22:44:53.957 [main] DEBUG base.TestBase - Property value got successfully Name : broswer 
+22:44:56.085 [main] INFO  base.TestBase - Chrome browser lauched suceessfully
+22:44:56.101 [main] DEBUG base.TestBase -  Implicit wait applied suceessfully
+22:44:56.101 [main] DEBUG base.TestBase - Property value got successfully Name : url
+22:45:02.354 [main] INFO  base.TestBase - Browser window opened in full screen mode
+22:45:02.354 [main] INFO  base.TestBase -  Url launched suceessfully
+22:45:02.355 [main] INFO  tests.HomePageTest - Initialization of driver done

@@ -1,0 +1,6 @@
+22:20:21.408 [pool-2-thread-2] INFO  tests.HomePageTest - Broswer window is clode. Driver closed
+22:20:21.412 [pool-2-thread-2] DEBUG base.TestBase -  Cofiguration file loaded
+22:20:21.413 [pool-2-thread-2] DEBUG base.TestBase - Property value got successfully Name : broswer 
+22:20:21.873 [pool-2-thread-1] DEBUG base.TestBase - In Screen shot taking method
+22:20:25.396 [pool-2-thread-2] INFO  base.TestBase - Chrome browser lauched suceessfully
+22:20:25.403 [pool-2-thread-2] DEBUG base.TestBase -  Implicit wait applied suceessfully

@@ -1,35 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" thread-count="3" parallel="methods">
 	<listeners>
-		<listener class-name="base.listeners" />
-		<listener class-name="base.ExtentReporterNG"></listener>
-	</listeners>
+		<listener class-name="base.listeners"/>
+		</listeners>
 	<test name="HomePageTest">
 		<classes>
 			<class name="tests.HomePageTest">
-				<!-- <methods> <include name="navigateToRegisterPageTC4"></include> <include 
-					name="navigateToLoginPageTC5"></include> <include name="getPhoneNumberTC6"></include> 
-					</methods> -->
 			</class>
 		</classes>
 	</test> <!-- Test -->
-	<test name="HomeHotel">
-		<classes>
-			<class name="tests.HomeHotelsTest">
-				<methods>
-					<include name="navigateHomeHotelUiTC1"></include>
-				</methods>
-			</class>
-		</classes>
-	</test>
-	<test name="HomeFlights">
-		<classes>
-			<class name="tests.HomePageFlightsTest">
-				<methods>
-					<include name="navigateHomeFlightUiTC1"></include>
-				</methods>
-			</class>
-		</classes>
-	</test>
 </suite> <!-- Suite -->

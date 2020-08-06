@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -18,7 +19,7 @@ public class LoginPageTest extends TestBase {
 	HomePage home;
 	HomePageTest homeTest;
 	LoginPage login;
-
+    public WebDriver driver;
 	public LoginPageTest() {
 		super();
 	}
@@ -26,9 +27,9 @@ public class LoginPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp() throws IOException {
 
-		initialiseDriver();
-		login = new LoginPage();
-		home = new HomePage();
+		driver = initialiseDriver();
+		login = new LoginPage(driver);
+		home = new HomePage(driver);
 		homeTest = new HomePageTest();
 		log.info("Initialization of driver done");
 		homeTest.navigateToLoginPageTC5();
